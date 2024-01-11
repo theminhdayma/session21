@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let math = +prompt("Nhập vào điểm môn toán");
+        let literature = +prompt("Nhập vào điểm môn văn");
+        let english = +prompt("Nhập vào điểm môn anh");
+
+        let mediumScore = (math+literature+english) / 3;
+        console.log(mediumScore);
+        if(mediumScore>=0 && mediumScore<5){
+            console.log("Yếu");
+        }else if(mediumScore<6.5){
+            console.log("Trung Bình");
+        }else if(mediumScore<8){
+            console.log("Khá");
+        }else if(mediumScore<=10){
+            console.log("Giỏi");
+        }else{
+            console.log("Không hợp lệ");
+        }
+    </script>
+</body>
+</html>
